@@ -18,6 +18,10 @@ models:
           - salary_check
   - name: customer
     description: "Model for customer table"
+  - name: sales
+    description: "Model for the sales table"
+  - name: product
+    description: "Model for product table"
 
     
 sources:
@@ -33,4 +37,13 @@ sources:
     - name: CUSTOMER_SRC 
   - name: customer_vw
     description: "DBT Model for the customer view"         
-        
+  - name: sales
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: SALES_SRC
+  - name: product
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PRODUCT_SRC
