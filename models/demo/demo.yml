@@ -20,10 +20,14 @@ models:
     description: "Model for customer table"
   - name: sales
     description: "Model for the sales table"
-  - name: product
+  - name: product_x
     description: "Model for product table"
   - name: purchase
     description: "Model for purchase table"
+  - name: clean_orders
+    description: "Model for clean_orders ephemeral table"
+  - name: final_orders
+    description: "Model for Final Orders"
     
 sources:
   - name: employee
@@ -53,4 +57,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: PURCHASE_SRC
-          
+  - name: orders
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: BASE_ORDERS
