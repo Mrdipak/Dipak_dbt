@@ -28,6 +28,8 @@ models:
     description: "Model for clean_orders ephemeral table"
   - name: final_orders
     description: "Model for Final Orders"
+  - name: session
+    description: "Model for sessions table"
     
 sources:
   - name: employee
@@ -39,9 +41,7 @@ sources:
     database: DBT_DB
     schema: PUBLIC
     tables:
-    - name: CUSTOMER_SRC 
-  - name: customer_vw
-    description: "DBT Model for the customer view"         
+    - name: CUSTOMER_SRC        
   - name: sales
     database: DBT_DB
     schema: PUBLIC
@@ -67,3 +67,8 @@ sources:
     schema: PUBLIC
     tables:
        - name: PATIENT_SRC
+  - name: session 
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+       - name: SESSION_SRC
