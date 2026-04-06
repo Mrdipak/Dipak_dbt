@@ -30,6 +30,10 @@ models:
     description: "Model for Final Orders"
   - name: session
     description: "Model for sessions table"
+  - name: concat_name
+    description: "Model for name concatenation"
+  - name: concat_address
+    description: "Model for address concatenation"
     
 sources:
   - name: employee
