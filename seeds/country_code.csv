@@ -1,0 +1,11 @@
+country_code,country_name,continent, currency
+US,United States,North America, USD
+CA,Canada,North America, CAD
+BR,Brazil,South America,PESO
+FR,France,Europe,FRANK
+CN,China,Asia, YUWAN
+IN,India,Asia, RUPEES
+NG,Nigeria,Africa
+AU,Australia,Oceania
+RU,Russia,Europe/Asia
+JP,Japan,Asia
